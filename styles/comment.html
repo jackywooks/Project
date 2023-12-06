@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Horse Vehicle Shop - Comment&Review</title>
+  </head>
+  <body>
+    <header>
+      <div class="headercontainer">
+        <div id="banner">
+          <a href="index.html"
+            ><img src="images/logo.jpg" id="logo" alt="logo"
+          /></a>
+          <h1>
+            Get the cheapest horse Carriage here in HorseVehicle.ca
+            <small
+              >enjoy the black Friday deal
+              <a href="news.html#blackfriday">here</a> NOW!</small
+            >
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="model.html" class="redirect">Models</a>
+              <ul>
+                <li><a href="model.html#cart" class="redirect">Cart</a></li>
+                <li>
+                  <a href="model.html#chariot" class="redirect">Chariot</a>
+                </li>
+                <li>
+                  <a href="model.html#carriage" class="redirect">Carriage</a>
+                </li>
+                <li>
+                  <a href="model.html#wagon" class="redirect">Wagon</a>
+                </li>
+                <li>
+                  <a href="model.html#coach" class="redirect">Coach</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="news.html" class="redirect">News</a></li>
+            <li>
+              <a href="comment.html" class="redirect">Comment & Review</a>
+              <ul>
+                <li>
+                  <a href="comment.html#comment" class="redirect">Comment</a>
+                </li>
+                <li>
+                  <a href="comment.html#review" class="redirect">Review</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="aboutus.html" class="redirect">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contentcontainer">
+        <form id="CommentForm" action="#">
+          <div id="comment">
+            <h2>Free Feel to Leave Comment for our product</h2>
+            <h3 id="cminfo">Your Info</h3>
+            <div class="cminfo">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="cminfo">
+              <label for="telegram">Telegram:</label>
+              <input type="number" name="telegram" id="telegram" />
+            </div>
+            <div class="cminfo">
+              <label for="home-town">Home Town:</label>
+              <input type="text" name="home-town" id="home-town" />
+            </div>
+            <div class="cmquestion">
+              <h3 id="questions">Question and Comment</h3>
+              <label for="cmq1">Which Model did you purchase?</label>
+              <select name="cmq1" id="cmq1" required>
+                <option value="">Select an option</option>
+                <option value="cart">cart</option>
+                <option value="chariot">chariot</option>
+                <option value="carriage">Carriage</option>
+                <option value="wagon">wagon</option>
+                <option value="coach">Coach</option>
+              </select>
+            </div>
+            <div class="cmquestion">
+              <label for="cmq2">Do you have any comment:</label>
+              <textarea
+                id="cmq2"
+                name="cmq2"
+                rows="5"
+                cols="50"
+                placeholder="Please share your review on our product"
+              ></textarea>
+            </div>
+            <button class="comment">Submit</button>
+          </div>
+        </form>
+        <div class="reviewcontainer">
+          <h1>Review</h1>
+          <div id="reviewresult"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footercontainer">
+        <p>HorseVehicle © 2023</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
